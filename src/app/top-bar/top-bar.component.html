@@ -1,8 +1,19 @@
 <a [routerLink]="['/']">
-  <h1>My Store</h1>
+  <img
+    src="https://angular.io/assets/images/logos/angular/shield-large.svg"
+    i18n-title="site header logo|Our company logo @@headerLogo"
+    title="Company logo"
+  />
+  <h1 i18n="site header| The slogan of our company">Best price every time</h1>
 </a>
 
-<a routerLink="/cart" class="button fancy-button"> Checkout </a>
+<a
+  routerLink="/cart"
+  class="button fancy-button"
+  i18n="site header| The checkout button"
+>
+  Checkout
+</a>
 
 <!--
 Copyright Google LLC. All Rights Reserved.

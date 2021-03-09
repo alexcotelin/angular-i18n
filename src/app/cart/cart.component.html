@@ -1,36 +1,33 @@
-<h3>Cart</h3>
+<h3 i18n="page title| The shopping cart">Cart</h3>
 
 <p>
-  <a routerLink="/shipping">Shipping Prices</a>
+  <a routerLink="/shipping" i18n>Shipping Prices</a>
 </p>
-
+<h4>
+  You have {{ items.length }} {items.length, plural, =1 {item} other {items}}
+</h4>
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }} </span>
   <span>{{ item.price | currency }}</span>
 </div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-
   <div>
-    <label for="name">
-      Name
-    </label>
-    <input id="name" type="text" formControlName="name">
+    <label for="name" i18n="cart page| Customer name"> Name </label>
+    <input id="name" type="text" formControlName="name" />
   </div>
 
   <div>
-    <label for="address">
-      Address
-    </label>
-    <input id="address" type="text" formControlName="address">
+    <label for="address" i18n="cart page| Customers address"> Address </label>
+    <input id="address" type="text" formControlName="address" />
   </div>
 
-  <button class="button" type="submit">Purchase</button>
-
+  <button class="button" type="submit" i18n="cart page|Buy button">
+    Purchase
+  </button>
 </form>
 
-
-<!-- 
+<!--
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
