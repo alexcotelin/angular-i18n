@@ -1,8 +1,7 @@
-<app-top-bar></app-top-bar>
+<p *ngIf="product.price > 700">
+  <button (click)="notify.emit()">Notify Me</button>
+</p>
 
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.

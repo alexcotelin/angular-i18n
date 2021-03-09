@@ -1,8 +1,10 @@
-<app-top-bar></app-top-bar>
+<h3>Shipping Prices</h3>
 
-<div class="container">
-  <router-outlet></router-outlet>
+<div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+  <span>{{ shipping.type }}</span>
+  <span>{{ shipping.price | currency }}</span>
 </div>
+
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
