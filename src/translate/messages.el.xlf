@@ -32,13 +32,28 @@
         <note priority="1" from="description"> The shopping cart</note>
         <note priority="1" from="meaning">page title</note>
       </trans-unit>
-      <trans-unit id="5639492566294542764" datatype="html">
+      <trans-unit id="cartShippingPrices" datatype="html">
         <source>Shipping Prices</source>
         <target>Τιμές αποστολής</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
           <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+
+      <trans-unit id="cartItemsListHeader" datatype="html">
+        <source> You have
+            <x id="INTERPOLATION" equiv-text=" {{ items.length }"/>
+            <x id="ICU" equiv-text="{items.length, plural, =1 {item} other {items}} "/> in your basket
+        </source>
+        <target> Εχεις
+            <x id="INTERPOLATION" equiv-text=" {{ items.length }"/>
+            <x id="ICU" equiv-text="{items.length, plural, =1 {item} other {items}} "/> στο καλάθι σου
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cart/cart.component.html</context>
+          <context context-type="linenumber">6,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1706649808023993732" datatype="html">
@@ -49,6 +64,7 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
+
       <trans-unit id="1400196449051465403" datatype="html">
         <source> Name </source>
         <target>όνομα</target>

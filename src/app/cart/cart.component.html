@@ -1,10 +1,11 @@
 <h3 i18n="page title| The shopping cart">Cart</h3>
 
 <p>
-  <a routerLink="/shipping" i18n>Shipping Prices</a>
+  <a routerLink="/shipping">{{ cartShippingPrices }}</a>
 </p>
-<h4>
-  You have {{ items.length }} {items.length, plural, =1 {item} other {items}}
+<h4 i18n="@@cartItemsListHeader">
+  You have {{ items.length }} {items.length, plural, =1 {item} other {items}} in
+  your basket
 </h4>
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }} </span>

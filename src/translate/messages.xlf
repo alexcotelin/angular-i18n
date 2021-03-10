@@ -11,11 +11,12 @@
         <note priority="1" from="description"> The shopping cart</note>
         <note priority="1" from="meaning">page title</note>
       </trans-unit>
-      <trans-unit id="5639492566294542764" datatype="html">
-        <source>Shipping Prices</source>
+      <trans-unit id="cartItemsListHeader" datatype="html">
+        <source> You have <x id="INTERPOLATION" equiv-text=" {{ items.length }"/> <x id="ICU" equiv-text="{items.length, plural, =1 {item} other {items}} "/> in your basket
+</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">4</context>
+          <context context-type="linenumber">6,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1706649808023993732" datatype="html">
@@ -29,7 +30,7 @@
         <source> Name </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description"> Customer name</note>
         <note priority="1" from="meaning">cart page</note>
@@ -38,7 +39,7 @@
         <source> Address </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">22</context>
         </context-group>
         <note priority="1" from="description"> Customers address</note>
         <note priority="1" from="meaning">cart page</note>
@@ -47,10 +48,19 @@
         <source> Purchase </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">26,27</context>
+          <context context-type="linenumber">27,28</context>
         </context-group>
         <note priority="1" from="description">Buy button</note>
         <note priority="1" from="meaning">cart page</note>
+      </trans-unit>
+      <trans-unit id="cartShippingPrices" datatype="html">
+        <source> Shipping Prices</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/cart/cart.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">description</note>
+        <note priority="1" from="meaning">meaning</note>
       </trans-unit>
       <trans-unit id="5167047587266870578" datatype="html">
         <source>Notify Me</source>
