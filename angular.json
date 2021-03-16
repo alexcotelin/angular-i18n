@@ -61,9 +61,6 @@
             "en": {
               "localize": ["en"]
             },
-            "fr": {
-              "localize": ["fr"]
-            },
             "el": {
               "localize": ["el"]
             }
@@ -80,9 +77,6 @@
             },
             "en": {
               "browserTarget": "sample-application:build:en"
-            },
-            "fr": {
-              "browserTarget": "sample-application:build:fr"
             },
             "el": {
               "browserTarget": "sample-application:build:el"
@@ -135,7 +129,6 @@
         "sourceLocale": "en-GB",
         "locales": {
           "en": "src/translate/messages.en.xlf",
-          "fr": "src/translate/messages.fr.xlf",
           "el": "src/translate/messages.el.xlf"
         }
       }
