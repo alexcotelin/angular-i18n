@@ -2,6 +2,24 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-GB" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="siteHeader" datatype="html">
+        <source>Hello <x id="PH" equiv-text="this.userName"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Greeting the customer</note>
+        <note priority="1" from="meaning">Site header</note>
+      </trans-unit>
+      <trans-unit id="siteHeader2" datatype="html">
+        <source>Hello <x id="userFirstName" equiv-text="this.userName"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Greeting the customer</note>
+        <note priority="1" from="meaning">Site header</note>
+      </trans-unit>
       <trans-unit id="2992167136690054830" datatype="html">
         <source>Cart</source>
         <context-group purpose="location">
@@ -30,7 +48,7 @@
         <source> Name </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description"> Customer name</note>
         <note priority="1" from="meaning">cart page</note>
@@ -39,7 +57,7 @@
         <source> Address </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">23</context>
         </context-group>
         <note priority="1" from="description"> Customers address</note>
         <note priority="1" from="meaning">cart page</note>
@@ -48,7 +66,7 @@
         <source> Purchase </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">28,29</context>
         </context-group>
         <note priority="1" from="description">Buy button</note>
         <note priority="1" from="meaning">cart page</note>
@@ -57,7 +75,7 @@
         <source> Shipping Prices</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.ts</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">18</context>
         </context-group>
         <note priority="1" from="description">description</note>
         <note priority="1" from="meaning">meaning</note>

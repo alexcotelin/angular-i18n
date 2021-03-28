@@ -2,6 +2,17 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-UK" datatype="plaintext" original="ng2.template">
     <body>
+         <trans-unit id="siteHeader" datatype="html">
+        <source>Hello <x id="PH" equiv-text="this.userName"/>!</source>
+        <target>Γεια σου <x id="PH" equiv-text="this.userName"/>!</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Greeting the customer</note>
+        <note priority="1" from="meaning">Site header</note>
+      </trans-unit>
       <trans-unit id="headerLogo" datatype="html">
         <source>Company logo</source>
         <target>Λογότυπο Εταιρείας</target>
@@ -66,7 +77,7 @@
       </trans-unit>
 
       <trans-unit id="1400196449051465403" datatype="html">
-        <source> Name </source>
+        <source>Name</source>
         <target>όνομα</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
@@ -86,7 +97,7 @@
         <note priority="1" from="meaning">cart page</note>
       </trans-unit>
       <trans-unit id="8997116455021896750" datatype="html">
-        <source> Purchase </source>
+        <source>Purchase</source>
         <target>Αγορά</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
@@ -97,7 +108,7 @@
       </trans-unit>
       <trans-unit id="5167047587266870578" datatype="html">
         <source>Notify Me</source>
-        <target>Notify me GR</target>
+        <target>Ειδοποίησέ με</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product-alerts/product-alerts.component.html</context>
           <context context-type="linenumber">2</context>
@@ -105,7 +116,7 @@
       </trans-unit>
       <trans-unit id="3342433449995226607" datatype="html">
         <source>Product Details</source>
-        <target>Prod Details GR</target>
+        <target>λεπτομέρειες προιόντος</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product-details/product-details.component.html</context>
           <context context-type="linenumber">1</context>

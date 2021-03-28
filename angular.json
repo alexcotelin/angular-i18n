@@ -58,9 +58,6 @@
                 }
               ]
             },
-            "en": {
-              "localize": ["en"]
-            },
             "el": {
               "localize": ["el"]
             }
@@ -74,9 +71,6 @@
           "configurations": {
             "production": {
               "browserTarget": "sample-application:build:production"
-            },
-            "en": {
-              "browserTarget": "sample-application:build:en"
             },
             "el": {
               "browserTarget": "sample-application:build:el"
@@ -128,7 +122,6 @@
       "i18n": {
         "sourceLocale": "en-GB",
         "locales": {
-          "en": "src/translate/messages.en.xlf",
           "el": "src/translate/messages.el.xlf"
         }
       }

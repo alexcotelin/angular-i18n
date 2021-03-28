@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
+  currentDate = new Date();
   items = this.cartService.getItems();
   checkoutForm = this.formBuilder.group({
     name: '',
