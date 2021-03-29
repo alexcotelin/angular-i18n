@@ -11,7 +11,9 @@ export class TopBarComponent {
 
   changeLanguage(e) {
     // Reload app for selected language
-    window.open('/' + e.target.value, '_self');
+    // window.open('/' + e.target.value, '_self');
+    localStorage.setItem('locale', e.target.value);
+    window.open('/', '_self');
   }
 }
 
