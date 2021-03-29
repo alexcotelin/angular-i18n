@@ -25,7 +25,7 @@
       </trans-unit>
       <trans-unit id="4652415805615859704" datatype="html">
         <source>Best price every time</source>
-        <target>Η καλύτερη τιμή κάθε φορά</target>
+        <target>Πάντα οι καλύτερες τιμές</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/top-bar/top-bar.component.html</context>
           <context context-type="linenumber">7</context>
@@ -45,7 +45,7 @@
       </trans-unit>
       <trans-unit id="cartShippingPrices" datatype="html">
         <source>Shipping Prices</source>
-        <target>Τιμές αποστολής</target>
+        <target>Κόστος μεταφορικών</target>
 
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="1706649808023993732" datatype="html">
         <source>{VAR_PLURAL, plural, =1 {item} other {items}}</source>
-        <target>{VAR_PLURAL, plural, =1 {είδος} other {αντικείμενα}}</target>
+        <target>{VAR_PLURAL, plural, =1 {αντικείμενο} other {αντικείμενα}}</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
           <context context-type="linenumber">7</context>
@@ -143,7 +143,7 @@
       </trans-unit>
       <trans-unit id="7419704019640008953" datatype="html">
         <source>Share</source>
-        <target>μερίδιο</target>
+        <target>Κοινοποίηση</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product-list/product-list.component.html</context>
           <context context-type="linenumber">15</context>
@@ -151,7 +151,7 @@
       </trans-unit>
       <trans-unit id="9078797053597295588" datatype="html">
         <source>Checkout</source>
-        <target>αποχώρηση</target>
+        <target>Ολοκλήρωση αγοράς</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/top-bar/top-bar.component.html</context>
           <context context-type="linenumber">15,16</context>
