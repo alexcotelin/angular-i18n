@@ -7,11 +7,10 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./top-bar.component.css'],
 })
 export class TopBarComponent {
-  language = new FormControl('');
+  language = localStorage.getItem('locale') || 'en';
 
   changeLanguage(e) {
     // Reload app for selected language
-    // window.open('/' + e.target.value, '_self');
     localStorage.setItem('locale', e.target.value);
     window.open('/', '_self');
   }
