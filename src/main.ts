@@ -24,6 +24,7 @@ if (locale !== 'en') {
     .then((json) => {
       // Load translation
       loadTranslations(json.translations);
+      $localize.locale = json.locale;
 
       // Bootstrap app
       platformBrowserDynamic()

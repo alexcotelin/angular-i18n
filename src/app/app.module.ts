@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,6 +12,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
+import { registerLocaleData } from '@angular/common';
+import localeEl from '@angular/common/locales/el';
+
+//If we don't load it like this throws an error it can't find el locale
+registerLocaleData(localeEl);
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -24,6 +30,10 @@ import { ShippingComponent } from './shipping/shipping.component';
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
     ]),
+  ],
+  providers: [
+    // When loading translation at runtime we need to set locale manually
+    { provide: LOCALE_ID, useValue: localStorage.getItem('locale') || 'en' },
   ],
   declarations: [
     AppComponent,
