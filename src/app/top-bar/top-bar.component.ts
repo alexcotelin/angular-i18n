@@ -7,7 +7,7 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./top-bar.component.css'],
 })
 export class TopBarComponent {
-  language = new FormControl('');
+  language = 'en';
 
   changeLanguage(e) {
     // Reload app for selected language
